@@ -37,13 +37,13 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        textoWeb = (TextView) findViewById(R.id.textoWeb);
-        textoMap = (TextView) findViewById(R.id.textoMap);
-        textoCopiar = (TextView) findViewById(R.id.textoCopiar);
+        textoWeb = findViewById(R.id.textoWeb);
+        textoMap = findViewById(R.id.textoMap);
+        textoCopiar = findViewById(R.id.textoCopiar);
 
-        botonWeb = (Button) findViewById(R.id.botonWeb);
-        botonMap = (Button) findViewById(R.id.botonMap);
-        botonCopiar = (Button) findViewById(R.id.botonCopiar);
+        botonWeb = findViewById(R.id.botonWeb);
+        botonMap = findViewById(R.id.botonMap);
+        botonCopiar = findViewById(R.id.botonCopiar);
 
         botonWeb.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -103,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
     /*
      * Intent para llevar un texto a una aplicación, o al portapapeles.
      * */
-
     private void copiarTexto() {
         String textoACopiar = String.valueOf(textoCopiar.getText());
         ShareCompat.IntentBuilder
