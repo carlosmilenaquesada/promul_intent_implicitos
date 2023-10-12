@@ -1,6 +1,7 @@
 package com.example.promul_intent_implicitos;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ShareCompat;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -70,10 +71,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /*
-    * Intent para abrir una dirección web proporcionada por el usuario. Tendremos que tomar la
-    * dirección de un textfield, comprobar que es una web válida, configurar el intent y finalmente
-    * lanzarlo
-    * */
+     * Intent para abrir una dirección web proporcionada por el usuario. Tendremos que tomar la
+     * dirección de un textfield, comprobar que es una web válida, configurar el intent y finalmente
+     * lanzarlo
+     * */
     private void abrirNavegadorWeb() {
         String url = String.valueOf(textoWeb.getText());
         String regex = "^(https?|ftp)://[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}(:(\\d{1,5}))?(/\\S*)?$";
@@ -100,14 +101,18 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /*
-    * Intent para llevar un texto a una aplicación, o al portapapeles.
-    * */
+     * Intent para llevar un texto a una aplicación, o al portapapeles.
+     * */
 
-    private void copiarTexto(){
-
-
+    private void copiarTexto() {
+        String textoACopiar = String.valueOf(textoCopiar.getText());
+        ShareCompat.IntentBuilder
+                .from(this)
+                .setType("text/plain")
+                .setChooserTitle("Llevar este texto a:")
+                .setText(textoACopiar)
+                .startChooser();
     }
-
 }
 
 
