@@ -4,7 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.promul_intent_implicitos"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.promul_intent_implicitos"
