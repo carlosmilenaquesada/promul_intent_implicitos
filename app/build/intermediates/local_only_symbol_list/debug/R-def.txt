@@ -1,0 +1,21 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id botonCopiar
+id botonMap
+id botonWeb
+id textoCopiar
+id textoMap
+id textoWeb
+id titulo
+layout activity_main
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.Promul_intent_implicitos
+style Theme.Promul_intent_implicitos
+xml backup_rules
+xml data_extraction_rules

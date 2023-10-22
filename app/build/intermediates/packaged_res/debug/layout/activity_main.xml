@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000FF"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Intents Implícitos"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/textoWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Introduzca una página web..."
+        android:inputType="text"
+        android:paddingTop="30dp" />
+
+    <Button
+        android:id="@+id/botonWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Abrir web" />
+
+    <EditText
+        android:id="@+id/textoMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Introduzca una ubicación..."
+        android:inputType="text"
+        android:paddingTop="30dp" />
+
+    <Button
+        android:id="@+id/botonMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Abrir ubicación" />
+
+    <EditText
+        android:id="@+id/textoCopiar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Introduzca texto a copiar..."
+        android:inputType="text"
+        android:paddingTop="30dp" />
+
+    <Button
+        android:id="@+id/botonCopiar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Copiar texto" />
+</LinearLayout>
